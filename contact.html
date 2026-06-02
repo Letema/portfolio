@@ -5,76 +5,122 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Letema Kutto</title>
 </head>
+<body style="background-color: #ffffff; margin: 0; padding: 0; min-height: 100vh; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #0f172a;">
 
-<body>
+    <!-- Premium Navigation Bar -->
+    <nav style="display: flex; justify-content: center; gap: 25px; padding: 20px; background: #ffffff; border-bottom: 1px solid #e2e8f0;">
+        <a href="index.html" style="color: #64748b; text-decoration: none; font-weight: 500; font-size: 0.95rem; transition: color 0.2s;" onmouseover="this.style.color='#0284c7'" onmouseout="this.style.color='#64748b'">Home</a>
+        <a href="about.html" style="color: #64748b; text-decoration: none; font-weight: 500; font-size: 0.95rem; transition: color 0.2s;" onmouseover="this.style.color='#0284c7'" onmouseout="this.style.color='#64748b'">About</a>
+        <a href="projects.html" style="color: #64748b; text-decoration: none; font-weight: 500; font-size: 0.95rem; transition: color 0.2s;" onmouseover="this.style.color='#0284c7'" onmouseout="this.style.color='#64748b'">Projects</a>
+        <a href="contact.html" style="color: #0284c7; text-decoration: none; font-weight: 600; font-size: 0.95rem; border-bottom: 2px solid #0284c7; padding-bottom: 4px;">Contact</a>
+    </nav>
 
-<!-- NAVIGATION -->
-<nav>
-    <a href="index.html">Home</a> 
-    <a href="about.html">About</a>
-    <a href="projects.html">Projects</a> 
-    <a href="contact.html">Contact</a>
-</nav>
+    <!-- Main Workspace Container -->
+    <main style="max-width: 950px; margin: 0 auto; padding: 60px 20px 100px 20px;">
 
-<h1>Contact Me</h1>
+        <div id="contact" style="clear: both;">
+            
+            <!-- Section Header -->
+            <div style="margin-bottom: 45px; text-align: left;">
+                <span style="color: #16a34a; font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; display: block; margin-bottom: 8px;">Get In Touch</span>
+                <h2 style="font-size: 2.2rem; font-weight: 800; color: #0f172a; margin: 0; letter-spacing: -0.5px;">Contact Me</h2>
+                <div style="width: 50px; height: 4px; background: linear-gradient(90deg, #0284c7, #0369a1); margin-top: 12px; border-radius: 2px;"></div>
+            </div>
 
-<form>
+            <!-- Double Column Layout Structure -->
+            <div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-start;">
+                
+                <!-- Left Column: Form Content -->
+                <div style="flex: 2; min-width: 320px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 20px; padding: 35px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02);">
+                    
+                    <form action="https://api.web3forms.com/submit" method="POST" style="display: flex; flex-direction: column; gap: 24px;">
 
-    <fieldset>
-        <legend>Personal Information</legend>
+                        <!-- Web3Forms API Context Configuration Elements -->
+                        <input type="hidden" name="access_key" value="ecf57420-78b7-488c-aaa8-c5b53e4dd56f">
+                        <input type="hidden" name="subject" value="New Portfolio Message">
+                        <input type="hidden" name="from_name" value="Portfolio Website">
 
-        <label for="name">Full Name *</label><br>
-        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
-        <br><br>
+                        <!-- Fieldset 1: Personal Information -->
+                        <fieldset style="border: 1px solid #cbd5e1; border-radius: 12px; padding: 20px; display: flex; flex-direction: column; gap: 16px; background: #ffffff;">
+                            <legend style="font-size: 0.9rem; font-weight: 700; color: #0284c7; text-transform: uppercase; letter-spacing: 0.5px; padding: 0 8px;">Personal Information</legend>
 
-        <label for="email">Email *</label><br>
-        <input type="email" id="email" name="email" placeholder="Enter your email" required>
-        <br><br>
+                            <div>
+                                <label for="name" style="display: block; font-size: 0.85rem; font-weight: 600; color: #475569; margin-bottom: 6px;">Full Name *</label>
+                                <input type="text" id="name" name="name" placeholder="Enter your full name" required style="width: 100%; padding: 12px 16px; border: 1px solid #cbd5e1; border-radius: 8px; font-size: 0.95rem; color: #0f172a; outline: none; transition: border-color 0.2s;" onfocus="this.style.borderColor='#0284c7'" onblur="this.style.borderColor='#cbd5e1'">
+                            </div>
 
-        <label for="phone">Phone (optional)</label><br>
-        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
-        <br><br>
+                            <div>
+                                <label for="email" style="display: block; font-size: 0.85rem; font-weight: 600; color: #475569; margin-bottom: 6px;">Email *</label>
+                                <input type="email" id="email" name="email" placeholder="Enter your email" required style="width: 100%; padding: 12px 16px; border: 1px solid #cbd5e1; border-radius: 8px; font-size: 0.95rem; color: #0f172a; outline: none; transition: border-color 0.2s;" onfocus="this.style.borderColor='#0284c7'" onblur="this.style.borderColor='#cbd5e1'">
+                            </div>
 
-    </fieldset>
+                            <div>
+                                <label for="phone" style="display: block; font-size: 0.85rem; font-weight: 600; color: #475569; margin-bottom: 6px;">Phone (optional)</label>
+                                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" style="width: 100%; padding: 12px 16px; border: 1px solid #cbd5e1; border-radius: 8px; font-size: 0.95rem; color: #0f172a; outline: none; transition: border-color 0.2s;" onfocus="this.style.borderColor='#0284c7'" onblur="this.style.borderColor='#cbd5e1'">
+                            </div>
+                        </fieldset>
 
-    <br>
+                        <!-- Fieldset 2: Message Details -->
+                        <fieldset style="border: 1px solid #cbd5e1; border-radius: 12px; padding: 20px; display: flex; flex-direction: column; gap: 16px; background: #ffffff;">
+                            <legend style="font-size: 0.9rem; font-weight: 700; color: #0284c7; text-transform: uppercase; letter-spacing: 0.5px; padding: 0 8px;">Message Details</legend>
 
-    <fieldset>
-        <legend>Message Details</legend>
+                            <div>
+                                <label for="subject" style="display: block; font-size: 0.85rem; font-weight: 600; color: #475569; margin-bottom: 6px;">Subject *</label>
+                                <select id="subject" name="subject" required style="width: 100%; padding: 12px 16px; border: 1px solid #cbd5e1; border-radius: 8px; font-size: 0.95rem; color: #0f172a; background: #ffffff; outline: none; transition: border-color 0.2s;" onfocus="this.style.borderColor='#0284c7'" onblur="this.style.borderColor='#cbd5e1'">
+                                    <option value="">-- Select Subject --</option>
+                                    <option value="project">Project Inquiry</option>
+                                    <option value="job">Job Opportunity</option>
+                                    <option value="general">General Question</option>
+                                </select>
+                            </div>
 
-        <label for="subject">Subject *</label><br>
-        <select id="subject" name="subject" required>
-            <option value="">-- Select Subject --</option>
-            <option value="project">Project Inquiry</option>
-            <option value="job">Job Opportunity</option>
-            <option value="general">General Question</option>
-        </select>
+                            <div>
+                                <label for="message" style="display: block; font-size: 0.85rem; font-weight: 600; color: #475569; margin-bottom: 6px;">Message *</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Write your message here (minimum 50 characters)" minlength="50" required style="width: 100%; padding: 12px 16px; border: 1px solid #cbd5e1; border-radius: 8px; font-size: 0.95rem; color: #0f172a; font-family: inherit; resize: vertical; outline: none; transition: border-color 0.2s;" onfocus="this.style.borderColor='#0284c7'" onblur="this.style.borderColor='#cbd5e1'"></textarea>
+                            </div>
 
-        <br><br>
+                           
+                        </fieldset>
 
-        <label for="message">Message *</label><br>
-        <textarea id="message" name="message" rows="5" placeholder="Write your message here (minimum 50 characters)" minlength="50" required></textarea>
+                        <!-- Interactive Submit Action -->
+                        <button type="submit" style="background: linear-gradient(90deg, #0284c7, #0369a1); color: #ffffff; border: none; padding: 14px 28px; border-radius: 10px; font-size: 1rem; font-weight: 700; cursor: pointer; transition: all 0.2s ease; box-shadow: 0 4px 12px rgba(2, 132, 199, 0.2);" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 16px rgba(2, 132, 199, 0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 12px rgba(2, 132, 199, 0.2)'">
+                            Send Message
+                        </button>
 
-        <br><br>
+                    </form>
+                </div>
+                
+                <!-- Right Column: Meta Information & Channels -->
+                <div style="flex: 1; min-width: 260px; display: flex; flex-direction: column; gap: 30px;">
+                    
+                    <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 20px; padding: 30px;">
+                        <h3 style="font-size: 1.2rem; font-weight: 700; color: #0f172a; margin: 0 0 20px 0;">Other Contact Info</h3>
+                        
+                        <div style="display: flex; flex-direction: column; gap: 16px; font-size: 0.95rem;">
+                            
+                            <div>
+                                <span style="display: block; font-size: 0.75rem; font-weight: 700; color: #64748b; text-transform: uppercase; letter-spacing: 0.5px;">Email</span>
+                                <a href="mailto:letemakutto00@gmail.com" style="color: #0284c7; text-decoration: none; font-weight: 500;" onmouseover="this.style.color='#0369a1'" onmouseout="this.style.color='#0284c7'">
+                                    letemakutto00@gmail.com
+                                </a>
 
-        <label>
-            <input type="checkbox" name="newsletter">
-            Subscribe to newsletter
-        </label>
+                                <p>
+  Facebook:
+  <a href="https://www.facebook.com/profile.php?id=61581439935535" target="_blank">
+    My Facebook
+  </a>
+</p>
 
-    </fieldset>
+<p>
+  Instagram:
+  <a href="https://www.instagram.com/letemakutto_" target="_blank">
+    My Instagram
+  </a>
+</p>
 
-    <br>
+<p>Location: Nairobi, Kenya</p>
 
-    <button type="submit">Send Message</button>
 
-</form>
+                            </div>
 
-<hr>
-
-<h2>Other Contact Info</h2>
-<p>Email: letema@example.com</p>
-<p>Location: Kenya</p>
-
-</body>
-</html>
+                            <div>

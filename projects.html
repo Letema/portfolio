@@ -5,42 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects - Letema Kutto</title>
 </head>
+<body style="background-color: #ffffff; margin: 0; padding: 0; min-height: 100vh; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
 
-<body>
-
-    <!-- NAVIGATION (same on all pages) -->
-    <nav>
-        <a href="index.html">Home</a> |
-        <a href="about.html">About</a> |
-        <a href="projects.html">Projects</a> |
-        <a href="contact.html">Contact</a>
+    <!-- Premium Navigation Bar -->
+    <nav style="display: flex; justify-content: center; gap: 25px; padding: 20px; background: #ffffff; border-bottom: 1px solid #e2e8f0;">
+        <a href="index.html" style="color: #64748b; text-decoration: none; font-weight: 500; font-size: 0.95rem; transition: color 0.2s;" onmouseover="this.style.color='#0284c7'" onmouseout="this.style.color='#64748b'">Home</a>
+        <a href="about.html" style="color: #64748b; text-decoration: none; font-weight: 500; font-size: 0.95rem; transition: color 0.2s;" onmouseover="this.style.color='#0284c7'" onmouseout="this.style.color='#64748b'">About</a>
+        <a href="projects.html" style="color: #0284c7; text-decoration: none; font-weight: 600; font-size: 0.95rem; border-bottom: 2px solid #0284c7; padding-bottom: 4px;">Projects</a>
+        <a href="contact.html" style="color: #64748b; text-decoration: none; font-weight: 500; font-size: 0.95rem; transition: color 0.2s;" onmouseover="this.style.color='#0284c7'" onmouseout="this.style.color='#64748b'">Contact</a>
     </nav>
 
-    <h1>My Projects</h1>
+    <!-- Main Workspace Container -->
+    <main style="max-width: 950px; margin: 0 auto; padding: 60px 20px 100px 20px;">
 
-    <p>Here are some of the projects I have built while learning web development.</p>
+        <!-- Classy Projects Section -->
+        <section id="projects" style="clear: both;">
+            
+            <!-- Section Header -->
+            <div style="margin-bottom: 40px; text-align: left;">
+                <span style="color: #16a34a; font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; display: block; margin-bottom: 8px;">My Portfolio</span>
+                <h2 style="font-size: 2.2rem; font-weight: 800; color: #0f172a; margin: 0; letter-spacing: -0.5px;">Featured Projects</h2>
+                <div style="width: 50px; height: 4px; background: linear-gradient(90deg, #0284c7, #0369a1); margin-top: 12px; border-radius: 2px;"></div>
+            </div>
 
-    <hr>
+            <!-- Responsive Projects Grid Workspace -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px;">
+                
+                <!-- Project 1: Weather App -->
+                <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 16px; padding: 25px; display: flex; flex-direction: column; justify-content: space-between; transition: all 0.3s ease; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.03);" onmouseover="this.style.borderColor='#16a34a'; this.style.background='#ffffff'; this.style.boxShadow='0 20px 25px -5px rgba(0, 0, 0, 0.05)'; this.style.transform='translateY(-4px)'" onmouseout="this.style.borderColor='#e2e8f0'; this.style.background='#f8fafc'; this.style.boxShadow='0 4px 6px -1px rgba(0, 0, 0, 0.03)'; this.style.transform='translateY(0)'">
+                    <div>
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                            <span style="color: #64748b; font-size: 0.8rem; font-weight: 600; text-transform: uppercase; tracking: 1px;">01 // API Integration</span>
+                            <span style="background: rgba(22, 163, 74, 0.1); color: #16a34a; font-size: 0.7rem; font-weight: 700; padding: 4px 10px; border-radius: 12px; border: 1px solid rgba(22, 163, 74, 0.2); text-transform: uppercase; letter-spacing: 0.5px;">Active</span>
+                        </div>
+                        <h3 style="font-size: 1.25rem; font-weight: 700; color: #0f172a; margin: 0 0 14px 0; letter-spacing: -0.3px;">Weather App</h3>
+                        <p style="font-size: 0.95rem; color: #475569; line-height: 1.6; margin: 0 0 20px 0;">
+                            Built a weather application that fetches live weather data from an API and displays temperature, humidity, and atmospheric conditions for any city worldwide.
+                        </p>
+                    </div>
+                    <!-- Updated Link to use the local folder file name -->
+                    <a href="weather.html" style="text-decoration: none; font-size: 0.85rem; font-weight: 700; color: #16a34a; display: inline-flex; align-items: center; gap: 4px; width: fit-content; transition: color 0.2s ease;" onmouseover="this.style.color='#0f172a'" onmouseout="this.style.color='#16a34a'">
+                        Go Live <span style="font-size: 1rem;">➔</span>
+                    </a>
+                </div>
 
-    <h2>1. Weather App</h2>
-    <p>
-        A web app that fetches live weather data using an API and displays temperature, humidity, and conditions for any city.
-    </p>
+                <!-- Project 2: Ticket Booking System -->
+                <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 16px; padding: 25px; display: flex; flex-direction: column; justify-content: space-between; transition: all 0.3s ease; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.03);" onmouseover="this.style.borderColor='#16a34a'; this.style.background='#ffffff'; this.style.boxShadow='0 20px 25px -5px rgba(0, 0, 0, 0.05)'; this.style.transform='translateY(-4px)'" onmouseout="this.style.borderColor='#e2e8f0'; this.style.background='#f8fafc'; this.style.boxShadow='0 4px 6px -1px rgba(0, 0, 0, 0.03)'; this.style.transform='translateY(0)'">
+                    <div>
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                            <span style="color: #64748b; font-size: 0.8rem; font-weight: 600; text-transform: uppercase; tracking: 1px;">02 // In Development</span>
+                            <span style="background: rgba(22, 163, 74, 0.1); color: #16a34a; font-size: 0.7rem; font-weight: 700; padding: 4px 10px; border-radius: 12px; border: 1px solid rgba(22, 163, 74, 0.2); text-transform: uppercase; letter-spacing: 0.5px;">Active</span>
+                        </div>
+                        <h3 style="font-size: 1.25rem; font-weight: 700; color: #0f172a; margin: 0 0 14px 0; letter-spacing: -0.3px;">Ticket Booking System</h3>
+                        <p style="font-size: 0.95rem; color: #475569; line-height: 1.6; margin: 0 0 20px 0;">
+                            Developing a ticket system for creating and managing support requests with built-in live status tracking, priority routing, and organized user communication portals.
+                        </p>
+                    </div>
+                    <!-- Updated Link to use the local folder file name -->
+                    <a href="ticket.html" style="text-decoration: none; font-size: 0.85rem; font-weight: 700; color: #16a34a; display: inline-flex; align-items: center; gap: 4px; width: fit-content; transition: color 0.2s ease;" onmouseover="this.style.color='#0f172a'" onmouseout="this.style.color='#16a34a'">
+                        Go Live <span style="font-size: 1rem;">➔</span>
+                    </a>
+                </div>
 
-    <h2>2. Ticket Booking System</h2>
-    <p>
-        A system that allows users to select ticket quantity, generate QR codes, and download tickets.
-    </p>
+                <!-- Project 3: React Community Hub -->
+                <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 16px; padding: 25px; display: flex; flex-direction: column; justify-content: space-between; transition: all 0.3s ease; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.03);" onmouseover="this.style.borderColor='#0284c7'; this.style.background='#ffffff'; this.style.boxShadow='0 20px 25px -5px rgba(0, 0, 0, 0.05)'; this.style.transform='translateY(-4px)'" onmouseout="this.style.borderColor='#e2e8f0'; this.style.background='#f8fafc'; this.style.boxShadow='0 4px 6px -1px rgba(0, 0, 0, 0.03)'; this.style.transform='translateY(0)'">
+                    <div>
+                        <span style="color: #64748b; font-size: 0.8rem; font-weight: 600; text-transform: uppercase; tracking: 1px;">03 // Architecture</span>
+                        <h3 style="font-size: 1.25rem; font-weight: 700; color: #0f172a; margin: 8px 0 12px 0;">React Community Hub</h3>
+                        <p style="font-size: 0.95rem; color: #475569; line-height: 1.6; margin: 0 0 20px 0;">
+                            Built a component-based React educational platform. Implemented complex view rendering, dynamic post feeds, scalable state flows, and modular UI components.
+                        </p>
+                    </div>
+                    <span style="font-size: 0.8rem; font-weight: 600; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px;">Learning Project</span>
+                </div>
 
-    <h2>3. React Community Hub</h2>
-    <p>
-        A React-based application using reusable components to display posts and layouts.
-    </p>
-
-    <h2>4. Portfolio Website</h2>
-    <p>
-        This is my deployed portfolio built using HTML and CSS and hosted on GitHub Pages.
-    </p>
-
-</body>
-</html>
+                <!-- Project 4: Portfolio Website -->
+                <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 16px; padding: 25px; display: flex; flex-direction: column; justify-content: space-between; transition: all 0.3s ease; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.03);" onmouseover="this.style.borderColor='#0284c7'; this.style.background='#ffffff'; this.style.boxShadow='0 20px 25px -5px rgba(0, 0, 0, 0.05)'; this.style.transform='translateY(-4px)'" onmouseout="this.style.borderColor='#e2e8f0'; this.style.background='#f8fafc'; this.style.boxShadow='0 4px 6px -1px rgba(0, 0, 0, 0.03)'; this.style.transform='translateY(0)'">
+                    <div>
+                        <span style="color: #64748b; font-size: 0.8rem; font-weight: 600; text-transform: uppercase; tracking: 1px;">04 // Production</span>
+                        <h3 style="font-size: 1.25rem; font-weight: 700; color: #0f172a; margin: 8px 0 12px 0;">Portfolio Website</h3>
+                        <p style="font-size: 0.95rem; color: #475569; line-height: 1.6; margin: 0 0 20px 0;">
+                            My custom-deployed engineering portal showcasing active core skillsets, professional layouts, clean documentation scripts, and automated GitHub actions.
+                        </p>
+                    </div>

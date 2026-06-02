@@ -6,30 +6,104 @@
     <title>About - Letema Kutto</title>
 </head>
 
-<body>
+<body style="background: linear-gradient(135deg, #0b0f19 0%, #111827 100%); margin: 0; padding: 0; min-height: 100vh; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #e2e8f0;">
 
-    <nav>
-        <a href="index.html">Home</a> |
-        <a href="about.html">About</a> |
-        <a href="projects.html">Projects</a> |
-        <a href="contact.html">Contact</a>
+    <!-- Premium Navigation Bar -->
+    <nav style="display: flex; justify-content: center; gap: 25px; padding: 20px; background: rgba(15, 23, 42, 0.4); backdrop-filter: blur(8px); border-bottom: 1px solid rgba(255, 255, 255, 0.05);">
+        <a href="index.html" style="color: #94a3b8; text-decoration: none; font-weight: 500; font-size: 0.95rem; transition: color 0.2s;" onmouseover="this.style.color='#38bdf8'" onmouseout="this.style.color='#94a3b8'">Home</a>
+        <a href="about.html" style="color: #38bdf8; text-decoration: none; font-weight: 600; font-size: 0.95rem; border-bottom: 2px solid #38bdf8; padding-bottom: 4px;">About</a>
+        <a href="projects.html" style="color: #94a3b8; text-decoration: none; font-weight: 500; font-size: 0.95rem; transition: color 0.2s;" onmouseover="this.style.color='#38bdf8'" onmouseout="this.style.color='#94a3b8'">Projects</a>
+        <a href="contact.html" style="color: #94a3b8; text-decoration: none; font-weight: 500; font-size: 0.95rem; transition: color 0.2s;" onmouseover="this.style.color='#38bdf8'" onmouseout="this.style.color='#94a3b8'">Contact</a>
     </nav>
 
-    <h1>About Me</h1>
+    <main style="max-width: 900px; margin: 0 auto; padding: 40px 20px 80px 20px;">
 
-    <p>
-        I am an aspiring frontend developer learning how to build modern, responsive websites.
-        I enjoy solving problems and creating real-world projects.
-    </p>
+        <!-- Classy About Me Section -->
+        <section id="about" style="margin-bottom: 60px; clear: both;">
+            <!-- Section Title -->
+            <div style="margin-bottom: 35px;">
+                <span style="color: #25D366; font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; display: block; margin-bottom: 8px;">My Story</span>
+                <h2 style="font-size: 2.2rem; font-weight: 800; color: #ffffff; margin: 0; letter-spacing: -0.5px;">About Me</h2>
+                <div style="width: 50px; height: 4px; background: #38bdf8; margin-top: 12px; border-radius: 2px;"></div>
+            </div>
 
-    <h2>Skills</h2>
-    <ul>
-        <li>HTML5</li>
-        <li>CSS3</li>
-        <li>JavaScript (learning)</li>
-        <li>React (learning)</li>
-        <li>Git & GitHub</li>
-    </ul>
+            <!-- Main Narrative -->
+            <div style="display: flex; flex-direction: column; gap: 24px; color: #94a3b8; font-size: 1.1rem; line-height: 1.75;">
+                <p style="margin: 0; font-weight: 500; color: #ffffff; font-size: 1.25rem;">
+                    I am a forward-thinking web developer dedicated to turning ideas into clean, interactive, and high-performance digital experiences.
+                </p>
+                <p style="margin: 0;">
+                    My journey into software engineering stems from a deep curiosity about how the modern web operates. I specialize in building structural interfaces using core pillars like <strong>HTML5, CSS3, and modern JavaScript</strong>, while actively scaling my architectural capabilities within the <strong>React ecosystem</strong>.
+                </p>
+                <p style="margin: 0;">
+                    Rather than just learning concepts theoretically, I thrive on engineering real-world solutions. Every project I deploy is a tactical step toward solving complex logical problems, mastering semantic clean code, and optimizing user workflows.
+                </p>
+            </div>
+
+            <!-- Tech Stack Tags -->
+            <div style="margin-top: 45px; background: rgba(15, 23, 42, 0.4); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 12px; padding: 25px; backdrop-filter: blur(8px);">
+                <h3 style="font-size: 1rem; font-weight: 700; color: #38bdf8; text-transform: uppercase; letter-spacing: 1px; margin: 0 0 15px 0;">
+                    Core Technologies I Work With:
+                </h3>
+                <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                    <span style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); color: #f1f5f9; font-size: 0.85rem; font-weight: 600; padding: 6px 14px; border-radius: 20px;">HTML5</span>
+                    <span style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); color: #f1f5f9; font-size: 0.85rem; font-weight: 600; padding: 6px 14px; border-radius: 20px;">CSS3 / Flexbox</span>
+                    <span style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); color: #f1f5f9; font-size: 0.85rem; font-weight: 600; padding: 6px 14px; border-radius: 20px;">JavaScript (ES6+)</span>
+                    <span style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); color: #f1f5f9; font-size: 0.85rem; font-weight: 600; padding: 6px 14px; border-radius: 20px;">React.js</span>
+                    <span style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); color: #f1f5f9; font-size: 0.85rem; font-weight: 600; padding: 6px 14px; border-radius: 20px;">Git / GitHub Workspace</span>
+                    <span style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); color: #f1f5f9; font-size: 0.85rem; font-weight: 600; padding: 6px 14px; border-radius: 20px;">Responsive Design</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Upgraded Skills Card Section -->
+        <section class="card" style="background: rgba(15, 23, 42, 0.3); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 16px; padding: 35px; backdrop-filter: blur(8px); box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.3);">
+            
+            <div style="margin-bottom: 30px;">
+                <span style="color: #38bdf8; font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; display: block; margin-bottom: 6px;">Technical Stack</span>
+                <h2 style="font-size: 1.8rem; font-weight: 700; color: #ffffff; margin: 0; letter-spacing: -0.5px;">Skills &amp; Toolkit</h2>
+                <div style="width: 40px; height: 3px; background: #25D366; margin-top: 10px; border-radius: 2px;"></div>
+            </div>
+
+            <!-- Skills Row Sub-Grid -->
+            <div style="display: flex; flex-direction: column; gap: 25px;">
+                
+                <!-- Category 1 -->
+                <div style="background: rgba(255, 255, 255, 0.02); padding: 20px; border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.04); text-align: center;">
+                    <h3 style="font-size: 1.05rem; font-weight: 600; color: #ffffff; margin: 0 0 15px 0; letter-spacing: 0.5px;">Languages &amp; Frameworks</h3>
+                    <a href="https://skillicons.dev" style="text-decoration: none; display: inline-block;">
+                        <img src="https://skillicons.dev/icons?i=python,flask,nodejs,javascript,c&theme=dark" alt="Languages and Frameworks" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+                    </a>
+                </div>
+
+                <!-- Category 2 -->
+                <div style="background: rgba(255, 255, 255, 0.02); padding: 20px; border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.04); text-align: center;">
+                    <h3 style="font-size: 1.05rem; font-weight: 600; color: #ffffff; margin: 0 0 15px 0; letter-spacing: 0.5px;">Frontend Development</h3>
+                    <a href="https://skillicons.dev" style="text-decoration: none; display: inline-block;">
+                        <img src="https://skillicons.dev/icons?i=react,angular,html,css,tailwind,materialui,figma&theme=dark" alt="Frontend Icons" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+                    </a>
+                </div>
+
+                <!-- Category 3 -->
+                <div style="background: rgba(255, 255, 255, 0.02); padding: 20px; border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.04); text-align: center;">
+                    <h3 style="font-size: 1.05rem; font-weight: 600; color: #ffffff; margin: 0 0 15px 0; letter-spacing: 0.5px;">Databases &amp; Infrastructure</h3>
+                    <a href="https://skillicons.dev" style="text-decoration: none; display: inline-block;">
+                        <img src="https://skillicons.dev/icons?i=mongodb,redis,nginx,docker,kubernetes,gcp&theme=dark" alt="Database and Infrastructure Icons" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+                    </a>
+                </div>
+
+                <!-- Category 4 -->
+                <div style="background: rgba(255, 255, 255, 0.02); padding: 20px; border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.04); text-align: center;">
+                    <h3 style="font-size: 1.05rem; font-weight: 600; color: #ffffff; margin: 0 0 15px 0; letter-spacing: 0.5px;">Development Tools</h3>
+                    <a href="https://skillicons.dev" style="text-decoration: none; display: inline-block;">
+                        <img src="https://skillicons.dev/icons?i=git,linux,bash,github&theme=dark" alt="Tools Icons" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
 
 </body>
 </html>
